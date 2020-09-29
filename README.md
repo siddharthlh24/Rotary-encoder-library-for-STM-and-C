@@ -11,6 +11,7 @@ Half step output is **enabled** by default and can be disabled.
 ```
 pinb5 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5);
 pinb6 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_6);
+
 result = Pin_process(pinb5,pinb6);
 if (result == DIR_CW) {
       count++;
