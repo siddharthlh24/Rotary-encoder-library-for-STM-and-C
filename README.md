@@ -8,7 +8,7 @@ The original function definition is changed to **unsigned char Pin_process(unsig
 Half step output is **enabled** by default and can be disabled.
 
 # Code snippet for reference
--------------------------------------------
+```
 pinb5 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5);
 pinb6 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_6);
 result = Pin_process(pinb5,pinb6);
@@ -19,3 +19,4 @@ if (result == DIR_CW) {
       --count;
       HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
     }
+```
